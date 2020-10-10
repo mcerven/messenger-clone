@@ -1,0 +1,9 @@
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarHeader > h1 {
+    flex: 1 1 auto;
+    font-size: 1.5rem;
+}

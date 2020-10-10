@@ -1,0 +1,27 @@
+.sidebarChannel {
+    display: flex;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+}
+
+.sidebarChannel.selected {
+    background-color: rgba(0, 0, 0, .04);
+}
+
+.sidebarChannel__messageInfo {
+    flex: 1;
+    align-self: flex-start;
+    margin-left: 0.5em;
+}
+
+.sidebarChannel__name {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sidebarChannel__lastMessage {
+    color: rgba(153, 153, 153, 1);
+}

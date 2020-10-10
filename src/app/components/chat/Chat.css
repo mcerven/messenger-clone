@@ -1,0 +1,6 @@
+.chat {
+    min-width: 400px;
+    flex: 1 1 75%;
+    display: flex;
+    flex-direction: column;
+}

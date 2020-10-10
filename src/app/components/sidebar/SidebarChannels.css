@@ -1,0 +1,10 @@
+.sidebarChannels {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0.5em 0;
+    overflow-y: auto;
+}
+
+.sidebarChannels__list {
+    margin-top: 0.8em;
+}
