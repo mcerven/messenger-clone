@@ -6,7 +6,6 @@ import { db } from '../../../firebase';
 
 function SidebarChannelOptions({id}) {
     const [anchorEl, setAnchorEl] = useState(null);
-    const [isHovering, setIsHovering] = useState(false);
     
     const openMenu = (event) => {
         setAnchorEl(event.currentTarget);
@@ -23,11 +22,7 @@ function SidebarChannelOptions({id}) {
     };
 
     return (
-        <div
-            className={`sidebarChannelOptions ${isHovering ? 'isHovering' : ''}`}
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-        >
+        <div className="sidebarChannelOptions">
             <IconButton className="sidebarChannelOptions__button" onClick={openMenu}>
                 <MoreHorizIcon />
             </IconButton>

@@ -10,6 +10,7 @@ function SidebarChannel({id, name}) {
     const selectedChannelId = useSelector(selectChannelId);
     const dispatch = useDispatch();
     const [lastMessage, setLastMessage] = useState(null);
+    const [isMouseOver, setIsMouseOver] = useState(false);
     
     function selectChannel() {
         dispatch(setChannel({id, name}));
@@ -49,7 +50,12 @@ function SidebarChannel({id, name}) {
     
     return (
         <div
-            className={`sidebarChannel ${selectedChannelId === id && 'selected'}`}
+            className={`sidebarChannel
+                ${selectedChannelId === id ? 'selected' : ''}
+                ${isMouseOver ? 'isHovering' : ''}`
+            }
+            onMouseEnter={() => setIsMouseOver(true)}
+            onMouseLeave={() => setIsMouseOver(false)}
             onClick={selectChannel}>
             <Avatar />
             <div className="sidebarChannel__messageInfo">

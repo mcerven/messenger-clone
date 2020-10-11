@@ -2,6 +2,6 @@
     visibility: hidden;
 }
 
-.sidebarChannelOptions.isHovering .sidebarChannelOptions__button {
+.sidebarChannel.isHovering .sidebarChannelOptions__button {
     visibility: visible;
 }
